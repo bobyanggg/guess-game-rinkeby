@@ -1,0 +1,6 @@
+import web3 from './web3';
+
+const address = '0x5e233eFd8891Ca8E4bD21b69d1AD71A478d60fee';
+const abi = [{"inputs":[{"internalType":"uint256","name":"num","type":"uint256"}],"stateMutability":"nonpayable","type":"constructor","signature":"constructor"},{"inputs":[{"internalType":"uint256","name":"num","type":"uint256"}],"name":"guess","outputs":[],"stateMutability":"payable","type":"function","payable":true,"signature":"0x9189fec1"},{"inputs":[],"name":"initUpperLimit","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function","constant":true,"signature":"0x300657a1"},{"inputs":[],"name":"isInit","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function","constant":true,"signature":"0xb145a5b8"},{"inputs":[],"name":"lowerLimit","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function","constant":true,"signature":"0x9731d9f6"},{"inputs":[],"name":"upperLimit","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function","constant":true,"signature":"0x38392c40"}];
+
+export default new web3.eth.Contract(abi, address);
