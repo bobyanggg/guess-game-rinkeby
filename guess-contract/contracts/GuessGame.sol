@@ -16,7 +16,7 @@ contract GuessGame {
     }
     
     function guess(uint num) public payable {
-        require(msg.value >= .01 ether && msg.value >= address(this).balance / 10);
+        require(msg.value >= .01 ether && msg.value >= address(this).balance / 10 && num >= lowerLimit && num <= upperLimit);
         if (num == ans) {
             payable(msg.sender).transfer(address(this).balance * 9 / 10);
             generateAnswer();
