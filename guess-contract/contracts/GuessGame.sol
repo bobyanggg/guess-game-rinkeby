@@ -7,6 +7,8 @@ contract GuessGame {
     uint public lowerLimit;
     uint public upperLimit;
     uint private ans;
+    // isInit represent the state of guessGame, if the correct guess is made, 
+    // the contract will return to initial state.
     bool public isInit;
     
     constructor(uint num) {
