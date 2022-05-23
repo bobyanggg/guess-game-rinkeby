@@ -48,6 +48,7 @@ The range of number will be updated if a wrong guess is made. You'll get a congr
 <img src="guess-react-frontend/images/resume.png" width="450"></br>
 
 <hr>
+
 ## Guess game contract in solidity
 
 The contract is written in solidy. First define contract GuessGame:
